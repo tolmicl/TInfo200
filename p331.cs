@@ -1,5 +1,6 @@
 using System;
 
+
 class p331
 {
     static void Main(string[] args)
@@ -10,17 +11,11 @@ class p331
 
         Console.Write("Please enter your height in inches: ");
         // get the user's value and put it  in  variable called heightInInches
-        string userHeight = Console.ReadLine();
-
-        // convert string userHeight to a double in order to do calculations
-        height = Convert.ToDouble(userHeight);
+        weight = Double.Parse(Console.ReadLine());
 
 
         Console.Write("Please enter your weight in pounds: ");
-        // Console.ReadLine will return a string
-        string userWeight = Console.ReadLine();
-        // need to convert that string to a double
-        weight = Convert.ToDouble(userWeight);
+        height = Double.Parse(Console.ReadLine());
 
 
         BMI = (weight * 703) / (height * height);
